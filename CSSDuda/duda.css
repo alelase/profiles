@@ -1,0 +1,159 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+	display: block;
+    margin: 8px;
+}
+
+div {
+    display: block;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
+h2 {
+        margin-top: 20px;
+    margin-bottom: 10px;
+	background-color:#3969a9; 
+	opacity:0.5;
+	transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.spanbold
+{
+ margin-left: 20px;
+ font-size: 20px;
+color: #333;
+}
+
+.container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:lightblue;
+}
+.row:after, .row:before, .container:after, .container:before {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width:80px; height:80px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 .col-lg  .col_sm{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+	
+}
+.text-center {
+  text-align: center;
+}
+
+
+.input-group-lg>.form-control {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 6px;
+	width: 250px;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  
+   .col-sm {
+    width: 25%;
+	float: left;
+}
+
+  .col-md-4 {
+    width: 30%;
+	float: left;
+}
+.col-lg {
+width: 50%;
+	float: left;
+}
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.pic{
+	background: url('http://du-cdn.multiscreensite.com/duda_website/img/home/insite-mac1.png') top right no-repeat;
+    height: 420px;
+background-position: 50%;
+
+ width: 200px;
+    -webkit-transition: width 1s; 
+    transition: width 1s;
+    
+}
+
+.pic:hover
+{
+width: 100%;
+}
+
+h2:hover
+{
+width: 100%;
+opacity:1;
+}
+
+
+

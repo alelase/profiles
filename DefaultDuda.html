@@ -1,0 +1,98 @@
+<!DOCTYPE html>     
+<head>
+    <title>Alejandro - DudaMobile Test</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" >-->
+	<link rel="stylesheet" type="text/css" href="CSSDuda/duda.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script src="JSDuda/duda.js"></script>
+</head>
+<body>
+<form id="form1">
+
+<div class="container">
+  <h1>Alejandro's Page for DUDA Mobile</h1>
+  <p>Creation Date: October 11, 2015</p>          
+</div>
+
+	<div class="container">
+	<p>
+	<div class="row">
+	
+	<div class="col-sm text-center input-group-lg">
+      <select id="selProfiles" class="form-control">
+			<option value="0">Select Profile</option>
+			</select>
+
+	</div>
+    <div class="col-sm text-center input-group-lg">
+			<input id="name" type="text" placeholder="Profile Name"  class="form-control" />
+    </div>
+	
+	<div class="col-sm text-center input-group-lg">
+			<input id="bio" type="text" placeholder="Bio"  class="form-control" />
+    </div>
+	<input id="fbprof" type="hidden">
+
+	<div class="col-sm text-center input-group-lg">
+	<input type="button" style="color:white; background-color:#3969a9;" value="Create" class="form-control"  onclick="if(profileid != '0') CreateCard(); else alert('Select Profile');" />
+	</div>
+	
+	</div>
+	
+	
+
+	<p>
+</div>
+	
+<div class="container marketing" style="padding-top:30px; " >
+
+
+  <div id="profilecards" class="row" style="color:#fbfffa;">
+  <!--
+	<div class="col-md-4 text-center"  style="margin-left:6px;">
+      <img class="img-circle" src="https://lh3.googleusercontent.com/-NKFjIpILBic/VA8rHehP2lI/AAAAAAAAAds/Cgm9nP803uE/s640-Ic42/IMG_5398.JPG">
+      <h2>Life Survival</h2>
+      <p style="background-color:red; opacity:0.8;">Squirrels are members of the family Sciuridae, consisting of small or medium-size rodents.</p>
+    </div>
+	
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://bestanimations.com/Animals/Reptiles/Dinosaurs/dinosaur-animation-18.gif" onclick="trex.speak('I will eat you alive for poking me.');">
+      <h2>Dangerous Creatures</h2>
+      <p style="background-color:violet; opacity:0.8;">Tyrannosaurus rex was one of the largest land carnivores of all time.</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="https://lh6.googleusercontent.com/-86IbGEiuwG0/VUzJXnntd9I/AAAAAAAAEK4/T_ZDLbo0PYE/s553-no/avatar.jpg">
+      <h2>Hostile Environment</h2>
+      <p style="background-color:darkgreen; opacity:0.8;">The chili pepper is the fruit of plants from the genus Capsicum, members of the nightshade family.</p>
+    </div>
+    -->
+  </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+
+</form>
+</body>
+<script>
+
+$(document).ready(function () {
+
+$('#selProfiles').on('change', function() {
+  //alert( this.value ); // or $(this).val()
+  profileid = this.value;
+  urldata = 'http://duda-api-test.herokuapp.com/profile/' + profileid;
+
+  if(this.value != '0')
+	GetProfilesData();
+});
+
+GetProfiles();
+
+GetSessionStorage();
+});
+</script>
+</html>
